@@ -17,9 +17,19 @@ def index():
 def hbnb():
     return "HBNB"
 
+
 @app.route("/c/<text>", strict_slashes=False)
 def C_is_fun(text):
     return "C" + " " + text.replace("_", " ")
+
+@app.route("/python", strict_slashes=False)
+def python():
+    return "Python is cool"
+
+
+@app.route("/python/<text>", strict_slashes=False)
+def Python_is_magic(text):
+    return "Python " + text.replace("_", " ")
 
 
 if __name__ == "__main__":
