@@ -22,6 +22,7 @@ def hbnb():
 def C_is_fun(text):
     return "C" + " " + text.replace("_", " ")
 
+
 @app.route("/python", strict_slashes=False)
 def python():
     return "Python is cool"
